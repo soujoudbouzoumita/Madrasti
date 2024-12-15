@@ -1,0 +1,12 @@
+.event-details {
+  margin-top: 20px;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+}
+
+.event-details h2 {
+  color: #583a5e;
+}

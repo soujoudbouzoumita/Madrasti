@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #e3a9ee;
+  color: black;
+  padding: 0.5rem;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-user {
+  font-size: 1.2rem;
+}
+
+.navbar-bottom {
+  background-color: #f3f1e0;
+  padding: 0.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  cursor: pointer;
+}

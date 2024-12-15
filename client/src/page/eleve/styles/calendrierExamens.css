@@ -1,0 +1,13 @@
+/* Ajouter une couleur aux jours d'examen */
+.exam-day {
+    background-color: #e6d8e9 !important; /* Jaune clair */
+    border-radius: 50%;
+    color: #000;
+  }
+  
+  /* Vous pouvez aussi personnaliser la couleur de la case lorsqu'on passe la souris dessus */
+  .react-calendar__tile--active.exam-day {
+    background-color: #e3a9ee !important; /* Orange clair */
+    color: white;
+  }
+  

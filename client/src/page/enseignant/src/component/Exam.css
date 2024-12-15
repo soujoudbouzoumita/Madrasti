@@ -1,0 +1,131 @@
+/* Conteneur principal du calendrier */
+.calendar-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Titre du calendrier */
+  h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Détails des événements */
+  .exam-details {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+  }
+  
+  /* Ajouter une transition pour le changement de sélection de date */
+  .exam-details p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #555;
+  }
+  
+  /* Personnalisation de la grille du calendrier */
+  .react-calendar {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  /* Conteneur des tuiles du calendrier */
+  .react-calendar__tile {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Style pour les jours d'examen */
+  .exam-day {
+    background-color: #ff7043; /* Un orange vif */
+    color: white !important;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Effet au survol des jours du calendrier */
+  .react-calendar__tile:hover {
+    transform: scale(1.1);
+    background-color: #f1f1f1;
+  }
+  
+  /* Style pour les jours d'examen lorsqu'ils sont survolés */
+  .react-calendar__tile.exam-day:hover {
+    background-color: #ff5722;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* Style pour le jour sélectionné */
+  .react-calendar__tile--active {
+    background-color: #3f51b5;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  /* Style pour les mois et les années */
+  .react-calendar__navigation button {
+    background-color: #3f51b5;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .react-calendar__navigation button:hover {
+    background-color: #303f9f;
+  }
+  
+  /* Responsive: réduire la taille du calendrier sur les petits écrans */
+  @media (max-width: 600px) {
+    .calendar-container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .react-calendar {
+      width: 100%;
+      max-width: 90%;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Animation du calendrier */
+  .react-calendar__tile--now {
+    background-color: #c5e1a5 !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .react-calendar__tile--now:hover {
+    background-color: #aed581 !important;
+    cursor: pointer;
+  }
+  

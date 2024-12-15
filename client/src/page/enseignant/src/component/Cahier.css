@@ -1,0 +1,134 @@
+/* Cahier.css */
+
+/* Conteneur principal */
+.cahier-de-texte-container {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style du formulaire */
+  .cahier-de-texte-form {
+    background-color: #f4f6f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cahier-de-texte-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .cahier-de-texte-form select,
+  .cahier-de-texte-form textarea,
+  .cahier-de-texte-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+  }
+  
+  .cahier-de-texte-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .cahier-de-texte-form button {
+    background-color: #E6D8E9; /* Couleur de fond mise à jour */
+    color: black; /* Texte noir */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cahier-de-texte-form button:hover {
+    background-color: #f3f1e0; /* Couleur de survol mise à jour */
+    color: black;
+  }
+  
+  /* Message d'erreur */
+  .error-message {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* Tableaux */
+  .devoirs-table, .historique-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+  }
+  
+  .devoirs-table th, .historique-table th {
+    background-color: #E6D8E9; /* Couleur de fond des entêtes */
+    color: black; /* Texte noir */
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .devoirs-table td, .historique-table td {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .devoirs-table tr:nth-child(even), .historique-table tr:nth-child(even) {
+    background-color: #ecf0f1;
+  }
+  
+  .devoirs-table tr:hover, .historique-table tr:hover {
+    background-color: #f9ebc7;
+  }
+  
+  .devoirs-table a {
+    color: #E6D8E9; /* Couleur des liens mise à jour */
+    text-decoration: none;
+  }
+  
+  .devoirs-table a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Filtres */
+  .cahier-de-texte-container select {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+  }
+  
+  .cahier-de-texte-container label {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+  
+  /* Conteneur pour les filtres */
+  .cahier-de-texte-container > div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cahier-de-texte-container > div select {
+    margin-right: 20px;
+  }
+  

@@ -1,0 +1,29 @@
+.calendar-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #37d6ce;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2cb3a9;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #583a5e;
+}

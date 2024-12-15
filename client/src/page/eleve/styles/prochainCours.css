@@ -1,0 +1,104 @@
+/* Configuration globale */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f5fa; /* Fond neutre très clair */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Table principale */
+  .schedule-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+    background-color: #ffffff; /* Fond blanc pour le tableau */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.2);
+  }
+  
+  .schedule-table th,
+  .schedule-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .schedule-table th {
+    background-color: #e6d8e9; /* En-tête mauve pastel */
+    color: #000000; /* Texte noir */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .schedule-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .schedule-table td {
+    vertical-align: top;
+  }
+  
+  /* Cartes des cours */
+  .course-card {
+    background-color: #e6d8e9; /* Fond uniforme mauve pastel */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(128, 128, 128, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05); /* Zoom légèrement plus fort au survol */
+    box-shadow: 0 4px 12px rgba(128, 128, 128, 0.25);
+  }
+  
+  .course-card h4 {
+    margin: 0 0 5px;
+    color: #000000; /* Texte noir */
+    font-size: 1.1rem;
+  }
+  
+  .course-card p {
+    margin: 5px 0;
+    color: #000000; /* Texte noir */
+    font-size: 0.9rem;
+  }
+  
+  /* Pas de cours */
+  .no-courses {
+    color: #aaa;
+    font-style: italic;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Titre */
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #000000; /* Titre noir */
+    margin-bottom: 20px;
+  }
+  
+  /* Pied de page */
+  footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #666; /* Gris clair pour un contraste doux */
+  }
+  
+  /* Colonnes (matin et après-midi) */
+  .column-header {
+    background-color: #37d6ce; /* Vert pastel plus marqué */
+    color: #000000; /* Texte noir */
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+  

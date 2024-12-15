@@ -1,0 +1,70 @@
+.meeting-planner-page {
+  font-family: 'Poppins', sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f1e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #583a5e;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f3f1e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    border: 1px solid #583a5e;
+  }
+  
+  th {
+    background-color: #583a5e;
+    color: white;
+  }
+  
+  button {
+    background-color: #37d6ce62;
+    display: inline-block;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #e3a9ee;
+  }
+  
+  .meeting-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #583a5e;
+  }
+  
+  .meeting-form input, .meeting-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #37d6ce;
+    border-radius: 5px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  

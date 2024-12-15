@@ -1,0 +1,113 @@
+.reunion-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #E6D8E9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+.reunion-container h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Section des filtres */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filters label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.filters input[type="date"],
+.filters input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.filters input[type="date"]:focus,
+.filters input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Table de réunion */
+.reunion-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.reunion-table th,
+.reunion-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.reunion-table th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: bold;
+}
+
+.reunion-table td {
+  background-color: #fff;
+  color: #555;
+}
+
+/* Style pour les colonnes de salle et d'heure */
+.reunion-table td:last-child,
+.reunion-table th:last-child {
+  text-align: center;
+}
+
+.reunion-table td:nth-child(5),
+.reunion-table th:nth-child(5) {
+  text-align: center;
+}
+
+.reunion-table td:nth-child(6),
+.reunion-table th:nth-child(6) {
+  text-align: center;
+}
+
+/* Message d'erreur */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Styles pour le tableau lorsqu'il n'y a pas de réunions */
+.reunion-table tbody tr td {
+  text-align: center;
+}
+
+.reunion-table tbody tr td[colspan="6"] {
+  font-style: italic;
+  color: #888;
+}
+.filters input[type="date"]:focus {
+  outline: none;
+  border: 1px solid #ccc; /* Restaurer la bordure normale */
+}
+
+

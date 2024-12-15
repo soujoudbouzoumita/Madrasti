@@ -1,0 +1,112 @@
+.calendrier-container {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #583A5E;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Conteneur pour la grille du calendrier */
+.calendrier {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Style du mois */
+.mois {
+    background-color: #f9f9f9; /* Ajout d'une couleur par défaut */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.mois:hover {
+    transform: translateY(-10px);
+    background-color: #583A5E;
+}
+
+/* Style du titre du mois */
+.mois h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #583A5E;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.mois:hover h3 {
+    color: white; /* Change le texte en blanc au survol */
+}
+
+/* Liste des événements associés à chaque mois */
+.evenements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style de chaque événement */
+.evenement {
+    background-color: #583A5E;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Style pour le titre de l'événement */
+.evenement-nom {
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+/* Style pour la date de l'événement */
+.evenement-date {
+    display: none; /* Cachée par défaut */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #583A5E;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.3rem; /* Plus grande que le titre */
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Assure que la date est au-dessus du titre */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Lorsque la souris est sur l'événement */
+.evenement:hover .evenement-nom {
+    display: none; /* Cache le titre */
+}
+
+.evenement:hover .evenement-date {
+    display: block; /* Affiche la date */
+    transform: translate(-50%, -50%);
+}

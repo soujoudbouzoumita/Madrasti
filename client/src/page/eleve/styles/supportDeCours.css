@@ -1,0 +1,77 @@
+/* Palette de couleurs violette */
+:root {
+    --primary-color: #583a5e; /* Violet clair */
+    --secondary-color: #37d6ce62;
+    --hover-color: #583a5e; /* Violet clair pour hover */
+    --text-color: #e3a9ef; /* Couleur du texte du titre des cours */
+  }
+  
+  /* Style global */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  h2 {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    color: var(--text-color);
+  }
+  
+  /* Conteneur de cours */
+  .course-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style des blocs de cours */
+  .course-item {
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .course-item:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+  }
+  
+  /* Style du bouton pour accéder au cours */
+  .access-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .access-button:hover {
+    background-color: var(--hover-color); /* Changement de couleur au survol */
+  }
+  
+  /* Style du lien vidéo explicative */
+  .video-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .video-link:hover {
+    color: var(--hover-color); /* Changement de couleur au survol */
+  }
+  

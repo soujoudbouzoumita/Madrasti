@@ -1,0 +1,105 @@
+/* Navbar container */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; /* Transparent background */
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+/* Header with logo and user */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    
+}
+.navbar-name i {
+    color: #e3a9ee;
+}
+.name-app {
+    margin-left: 15px;
+    font-weight:bold ;
+    color: #583A5E;
+    
+}
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #37D6CE;
+    font-size: 20px;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #583A5E; /* User icon color */
+}
+
+/* Links in the navbar */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #444;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-item:hover {
+    color: #583A5E;
+}
+
+/* Dropdown menu */
+.navbar-dropdown {
+    position: relative;
+
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 5px 10px;
+}
+
+.dropdown-menu li a {
+    color: #444;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #37D6CE;
+}

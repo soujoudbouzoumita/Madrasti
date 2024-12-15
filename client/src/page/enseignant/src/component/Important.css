@@ -1,0 +1,109 @@
+/* Container for the notes section */
+.notes-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Arrière-plan clair */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styling */
+  .notes-container h2 {
+    text-align: center;
+    color: #583A5E; /* Couleur foncée pour les titres */
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* List container */
+  .notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Each note card */
+  .note-item {
+    background-color: white; /* Fond blanc pour chaque note */
+    border: 1px solid #E3A9EE; /* Bordure assortie à la couleur principale */
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Hover effect on notes */
+  .note-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title of each note */
+  .note-title {
+    font-size: 18px;
+    color: #583A5E; /* Couleur foncée pour le titre */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Description of the note */
+  .note-description {
+    font-size: 15px;
+    color: black; /* Texte noir pour une meilleure lisibilité */
+    line-height: 1.4;
+  }
+  
+  /* Timestamp */
+  .note-timestamp {
+    font-size: 13px;
+    color: black; /* Texte noir pour les détails */
+    align-self: flex-end;
+    font-style: italic;
+  }
+  
+  /* Details of the note */
+  .note-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Fond clair pour les détails */
+    border-left: 4px solid #E3A9EE; /* Accent color */
+    font-size: 14px;
+    color: black; /* Texte noir */
+    line-height: 1.4;
+    border-radius: 4px;
+  }
+  
+  /* "Voir Plus" button */
+  .view-more-button {
+    align-self: flex-start;
+    padding: 7px 12px;
+    font-size: 14px;
+    color: white; /* Texte blanc */
+    background-color: #583A5E; /* Couleur foncée pour le bouton */
+    border: 1px solid #E3A9EE; /* Bordure assortie à la couleur principale */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .view-more-button:hover {
+    background-color: #E3A9EE; /* Couleur principale au survol */
+    color: #583A5E; /* Texte foncé au survol */
+    transform: scale(1.05);
+  }
+  
+  /* No notes message */
+  .no-notes-message {
+    text-align: center;
+    font-size: 16px;
+    color: #583A5E; /* Couleur foncée pour le message */
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

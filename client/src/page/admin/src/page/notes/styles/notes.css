@@ -1,0 +1,106 @@
+/* Style pour la page principale */
+.body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre le contenu */
+}
+
+h1 {
+  text-align: center;
+  color: #583a5e;
+  margin-bottom: 40px;
+  font-size: 2rem; /* Taille de police adaptable */
+}
+
+/* Style pour chaque carte de note */
+.note-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Occupe toute la largeur disponible */
+  max-width: 900px; /* Limite la largeur maximale */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.note-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre de la note */
+.note-title {
+  font-size: 1.4rem; /* Taille réduite sur petits écrans */
+  color: #37d6ce62;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Date de la note */
+.note-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* Contenu de la note */
+.note-content {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Style pour la liste des notes */
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%; /* Adapte la largeur */
+  align-items: center;
+}
+
+/* Responsivité : Petits écrans */
+@media (max-width: 768px) {
+  .note-card {
+    width: 95%; /* Réduit la largeur des cartes */
+    padding: 15px; /* Réduit le padding */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Réduit la taille du titre */
+    margin-bottom: 30px;
+  }
+
+  .note-title {
+    font-size: 1.2rem;
+  }
+
+  .note-content {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsivité : Très petits écrans (smartphones) */
+@media (max-width: 480px) {
+  .note-card {
+    width: 100%; /* Carte occupe toute la largeur */
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .note-title {
+    font-size: 1rem;
+  }
+
+  .note-content {
+    font-size: 0.8rem;
+  }
+}

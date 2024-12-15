@@ -1,0 +1,27 @@
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day-cell {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.day-cell:hover {
+  background-color: #f0f8ff;
+}
+
+.has-event {
+  background-color: #e6ffe6;
+}
+
+.empty-cell {
+  visibility: hidden;
+}
