@@ -10,7 +10,7 @@ body {
 
 /* Styles pour la sidebar */
 .sidebar {
-  width: 100%;
+  width: 1000%;
   max-width: 300px;
   background-color: transparent ;
   flex: 1; 

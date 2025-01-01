@@ -1,144 +1,53 @@
-# Réunion Enseignant
+# Plateforme Éducative
 
-Ce projet est une application web React permettant de gérer les réunions des enseignants avec des fonctionnalités de filtrage par date et heure. L'interface utilisateur offre une expérience intuitive et utilise des composants modernes pour un affichage clair et interactif.
+## Description
+Cette plateforme éducative est une application web conçue pour faciliter la communication et la gestion des utilisateurs dans un cadre éducatif. Elle propose trois interfaces distinctes : **Étudiant**, **Enseignant**, et **Administration**, où chaque utilisateur peut se connecter, s'inscrire, envoyer des messages et gérer les informations pertinentes de manière sécurisée et flexible.
 
----
+## Fonctionnalités Principales
+### 1. Authentification et Gestion des Rôles
+- **Inscription et Connexion sécurisées** avec gestion des rôles (Étudiant, Enseignant, Administrateur).
+- Gestion de session via **JSON Web Tokens (JWT)**.
+- Protection des routes et vérification des autorisations.
 
-## Fonctionnalités
+### 2. Interface Étudiant
+- Accès aux informations personnelles.
+- Envoi et réception de messages.
+- Gestion des données éducatives pertinentes.
 
-- **Affichage des réunions** : Liste des réunions avec leur date, description, salle et heure.
-- **Filtrage avancé** : 
-  - Filtrage des réunions par date.
-  - Filtrage par heure.
-- **Composants modernes** : Utilisation de Material-UI pour les sélecteurs de date et une interface professionnelle.
+### 3. Interface Enseignant
+- Gestion des interactions avec les étudiants (messages, documents, etc.).
+- Accès aux outils pédagogiques et aux ressources partagées.
 
----
+### 4. Interface Administrateur
+- Supervision des utilisateurs (création, modification, suppression).
+- Gestion des rôles et des autorisations.
+- Accès à des statistiques globales sur l’utilisation de la plateforme.
 
 ## Technologies Utilisées
+### **Front-End**
+- **React.js** : Pour une interface utilisateur dynamique et réactive.
+- **React Router v6** : Gestion de la navigation et des différentes interfaces utilisateur.
 
-### Frontend
+### **Back-End**
+- **Node.js** avec **Express.js** : Gestion des API et de la logique côté serveur.
+- **Mongoose** : Modélisation des données et interactions avec MongoDB.
+- **JWT** : Sécurisation des sessions utilisateur.
 
-- **React** : Création des composants interactifs.
-- **Material-UI** : Pour les éléments d'interface utilisateur tels que les sélecteurs de date et d'heure.
-- **Day.js** : Gestion et manipulation des dates.
+### **Base de Données**
+- **MongoDB** : Base de données NoSQL pour stocker les informations des utilisateurs, messages, et autres données pertinentes.
 
----
+### **Autres Outils**
+- **Postman** : Tests des API.
+- **Git** et **GitHub** : Gestion de version et collaboration.
 
-## Prérequis
+## Installation et Utilisation
+### 1. Prérequis
+- **Node.js** installé sur votre machine.
+- **MongoDB** en cours d’exécution localement ou sur un service cloud.
+- **Git** pour cloner le projet.
 
-- **Node.js** (version 16 ou supérieure) 
-- **npm** (version 8 ou supérieure) ou **Yarn**
-
----
-
-## Installation
-
-1. **Cloner le dépôt** :
+### 2. Installation
+1. Clonez le dépôt :
    ```bash
-   git clone <url-du-depot>
-   cd <nom-du-dossier>
-   ```
-
-2. **Installer les dépendances** :
-   ```bash
-   npm install
-   ```
-   ou si vous utilisez Yarn :
-   ```bash
-   yarn install
-   ```
-
-3. **Lancer le projet** :
-   ```bash
-   npm start
-   ```
-   ou avec Yarn :
-   ```bash
-   yarn start
-   ```
-
-4. Ouvrez votre navigateur à l'adresse suivante : [http://localhost:3000](http://localhost:3000).
-
----
-
-## Utilisation
-
-1. **Filtrer par date** :
-   - Utilisez le sélecteur de date pour choisir une date.
-   - Cliquez sur l'icône pour effacer la date sélectionnée.
-
-2. **Filtrer par heure** :
-   - Entrez une heure dans le champ de saisie pour filtrer les réunions.
-
-3. **Consulter les réunions** :
-   - La liste des réunions s'actualise automatiquement en fonction des filtres appliqués.
-
----
-
-## Structure du Projet
-
-```plaintext
-client/
-├── public/         # Fichiers publics (HTML, icônes)
-├── src/            # Code source principal
-│   ├── components/   # Composants React
-│   ├── App.js        # Composant principal
-│   ├── index.js      # Point d'entrée de l'application
-│   └── styles/        # Fichiers de style CSS
-├── package.json   # Gestionnaire de dépendances
-└── README.md       # Documentation du projet
-```
-
----
-
-## Dépendances Principales
-
-- **React** : ^18.0.0
-- **@mui/material** : ^5.0.0
-- **@mui/x-date-pickers** : ^6.0.0
-- **Day.js** : ^1.11.9
-
----
-
-## Développement
-
-### Linter et Formatage
-- Assurez-vous de suivre les conventions de code avec un linter comme ESLint.
-- Utilisez Prettier pour le formatage du code.
-
-### Ajouter de nouvelles fonctionnalités
-- Créez de nouveaux composants dans le dossier `components/`.
-- Suivez la structure du projet pour maintenir une organisation claire.
-
----
-
-## Problèmes Courants
-
-1. **Conflits de versions avec npm** :
-   - Si vous voyez une erreur `ERESOLVE`, utilisez cette commande :
-     ```bash
-     npm install --legacy-peer-deps
-     ```
-
-2. **Erreur de chargement de la page** :
-   - Vérifiez si tous les composants sont correctement importés.
-   - Redémarrez le serveur avec `npm start`.
-
----
-
-## Contribution
-
-Les contributions sont les bienvenues ! Merci de suivre les étapes suivantes :
-
-1. Forker ce dépôt.
-2. Créer une branche pour vos modifications :
-   ```bash
-   git checkout -b ma-branche
-   ```
-3. Pousser les modifications et créer une Pull Request.
-
----
-
-## Licence
-
-Ce projet est sous licence MIT. Consultez le fichier `LICENSE` pour plus d'informations.
+   git clone https://github.com/username/repository-name.git
+   cd repository-name
